@@ -1,0 +1,140 @@
+.splide-carousel {
+  &__container {
+    grid-column: 1 / -1;
+    overflow: hidden;
+  }
+
+  &__track {
+    padding: 2rem 0 3rem;
+    overflow: visible !important;
+  }
+
+  &__arrows {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__arrow {
+    display: flex;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    opacity: 1 !important;
+    transform: rotate(0) !important;
+    &--prev,
+    &--next {
+      width: 4rem !important;
+      height: 3rem !important;
+      grid-row: 2/ 3;
+      position: relative !important;
+      background-color: $color-secondary !important;
+      display: flex;
+      align-items: center;
+      justify-self: center;
+
+      svg {
+        position: relative;
+        z-index: 5;
+        width: 2rem !important;
+        height: 2rem !important;
+        fill: $color-white !important;
+        transform: scale(1) !important;
+      }
+
+      &:active {
+        opacity: 0.9 !important;
+      }
+    }
+
+    &--prev {
+      border-radius: 20rem 0 0 20rem !important;
+    }
+
+    &--next {
+      margin-right: 4rem;
+      border-radius: 0 20rem 20rem 0 !important;
+    }
+  }
+}
+
+.carousel {
+  grid-column: 1/-1;
+  // overflow: hidden;
+  display: grid;
+  padding-bottom: 2rem;
+  grid-template-columns: 1fr min-content;
+  visibility: visible;
+  &__viewport {
+    grid-column: 1 / -1;
+  }
+  &__slide {
+    height: auto;
+    padding: 5rem 0 3rem;
+    transition: 0.2s;
+    opacity: 1;
+    transform: scale(1);
+    cursor: grabbing;
+    align-items: start !important;
+  }
+
+  &__slide--visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &__slide--next {
+    .carousel__item {
+    }
+  }
+
+  &__slide--prev {
+    .carousel__item {
+    }
+  }
+
+  &__slide--active {
+    .carousel__item {
+    }
+  }
+  &__prev,
+  &__next {
+    width: 4rem !important;
+    height: 3rem !important;
+    grid-row: 2/ 3;
+    position: relative !important;
+    background-color: $color-secondary !important;
+    color: $color-white !important;
+    transform: none !important;
+
+    outline: none;
+    top: 0 !important;
+    transition: opacity 0.3s ease-out;
+  }
+
+  &__icon {
+  }
+
+  &__pagination {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    &-button {
+      width: 1.5rem !important;
+      height: 0.72rem !important;
+      background-color: $color-grey-light-2 !important;
+      outline: none;
+      &--active {
+        width: 4.32rem !important;
+        background-color: $color-secondary !important;
+      }
+    }
+  }
+}
+
+.carousel__prev--in-active,
+.carousel__next--in-active {
+  opacity: 0.8;
+}

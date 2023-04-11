@@ -1,0 +1,24 @@
+.rating {
+  align-self: center;
+  justify-self: start;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  color: $color-grey-dark-2;
+  font-weight: bold;
+  &__icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    fill: $color-yellow-light;
+    z-index: 20;
+    margin-right: 0.6rem;
+  }
+  &__text {
+    width: 4rem !important;
+  }
+  &__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

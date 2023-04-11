@@ -1,0 +1,38 @@
+.search {
+  &__group {
+    display: flex;
+    align-items: center;
+    width: 23.5rem;
+
+    @include respond(labtop-2) {
+      width: 18rem;
+    }
+
+    @include respond(tap-land-1) {
+      width: 15rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 3.8rem;
+    padding: 0 1rem 0 3.5rem;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    background-color: $color-grey-light-1;
+    font-size: 1.3rem;
+    color: $color-grey-dark-3;
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-1;
+      font-weight: 300;
+    }
+  }
+
+  &__icon {
+    margin-left: calc(1.5rem - 100%);
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: $color-primary-light;
+  }
+}

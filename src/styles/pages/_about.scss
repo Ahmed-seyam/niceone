@@ -1,0 +1,348 @@
+.about {
+  &__header {
+    position: relative;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+    background-color: $color-white;
+    min-height: 58rem;
+    max-height: calc(100vh - 14rem);
+    overflow: hidden;
+    border-radius: 3.2rem;
+    box-shadow: 0 0 1rem rgba($color-grey-light-4, 0.4);
+    padding: 0 0 0 5.5rem;
+
+    @include respond(tap-land-2) {
+      margin-top: 7rem;
+    }
+
+    @include respond(tab-port) {
+      grid-template-rows: max-content max-content 1fr max-content max-content;
+      padding: 0 4rem;
+      grid-template-columns: 1fr;
+      text-align: center;
+
+      min-height: max-content;
+      max-height: max-content;
+      height: auto;
+    }
+
+    @include respond(phone-1) {
+      margin-top: 5rem;
+      padding: 0 2rem;
+    }
+
+    @include respond(phone-3) {
+      border-radius: 0;
+    }
+
+    .dots {
+      margin: 4rem 0 2rem 0;
+    }
+
+    .btn {
+      margin-bottom: 5.5rem;
+
+      @include respond(tab-port) {
+        grid-row: 5 / 6;
+        grid-column: 1 / 2;
+        margin: 0 auto 4rem;
+      }
+    }
+
+    h1 {
+      @include respond(tab-port) {
+        grid-row: 2/ 3;
+        grid-column: 1 / 2;
+        text-align: left;
+        padding: 0;
+      }
+    }
+
+    .text {
+      color: $color-grey-dark-2;
+      font-size: 2rem;
+      padding: 2rem 0;
+
+      @include respond(tab-port) {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        text-align: left;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__paragraph {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: $color-grey-dark-1;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    display: block;
+    height: 44rem;
+    object-fit: contain;
+    position: relative;
+    z-index: 20;
+    @include respond(tab-port) {
+      height: 22rem;
+    }
+  }
+
+  &__image--div {
+    position: relative;
+    justify-self: stretch;
+    align-self: end;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      grid-row: 4 / 5;
+      grid-column: 1 / 2;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 19;
+      background-image: url("/images/flash.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+
+  .dot {
+    border-radius: 2rem;
+    height: 0.7rem;
+    width: 1.5rem;
+    background-color: $color-grey-light-2;
+    &__blue {
+      background-color: $color-secondary;
+      width: 4rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+/*
+  ====================================== Story Section ===========================================
+*/
+.story {
+  position: relative;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  justify-items: center;
+  padding: 5.5rem 0 0 0;
+  overflow: hidden;
+  border-radius: 3.2rem;
+  box-shadow: 0 0 1rem rgba($color-grey-light-4, 0.4);
+  min-height: calc(100vh - 14rem);
+  background-color: $color-white;
+  width: 100%;
+
+  @include respond(phone-3) {
+    border-radius: 0;
+  }
+
+  @include respond(tab-port) {
+    padding: 2rem 0 0 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 12.5rem;
+    height: 12.5rem;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+    background-color: $color-secondary;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 12.5rem;
+    height: 12.5rem;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+    background-color: $color-secondary;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .carousel__viewport {
+    overflow: hidden !important;
+  }
+
+  .carousel__slide {
+    overflow: hidden;
+    width: 100% !important;
+    padding-top: 0;
+  }
+
+  .carousel__pagination {
+    margin: auto;
+  }
+
+  .carousel {
+    align-items: center;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5rem;
+    grid-template-rows: 1fr;
+    justify-items: space-between;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 2rem 3rem 5.5rem;
+
+    @include respond(tab-port) {
+      padding: 0 2rem 3rem 2rem;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__text {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: left;
+    font-size: 2rem;
+    color: $color-grey-dark-3;
+
+    @include respond(tab-port) {
+      grid-row: 1 / 2;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__image--div {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    max-width: 90%;
+    height: 30rem;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    filter: drop-shadow(0.7rem 0.7rem 1.5rem rgba($color-grey-dark-4, 0.6));
+
+    @include respond(tab-port) {
+      grid-column: 1 /2;
+      grid-row: 3 / 4;
+      margin: 3rem auto;
+      width: 60vh;
+    }
+
+    @include respond(phone-3) {
+      width: 100%;
+      max-height: 25rem;
+    }
+  }
+}
+
+/*
+  map
+*/
+
+.map {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  position: relative;
+  padding: 5.5rem;
+  border-radius: 3.2rem;
+  box-shadow: 0 0 1rem rgba($color-grey-light-4, 0.4);
+  min-height: 60rem;
+  height: 100vh;
+  background-color: $color-white;
+
+  @include respond(phone-1) {
+    padding: 5.5rem 0;
+  }
+
+  @include respond(phone-3) {
+    height: 70vh;
+    border-radius: 0;
+  }
+  h2 {
+    margin: auto;
+    margin-bottom: 4rem;
+    width: max-content;
+  }
+
+  #map {
+    border-radius: 3.6rem;
+    background-color: $color-grey-light-2;
+
+    @include respond(phone-1) {
+      border-radius: 0;
+    }
+  }
+  &_t {
+    position: absolute;
+    width: 8.3rem;
+    height: 13.5rem;
+    background-color: $color-secondary;
+
+    @include respond(phone-1) {
+      display: none;
+    }
+    &1 {
+      left: 0;
+      top: 50%;
+      transform: translateY(-20%);
+      border-radius: 0 2.9rem 2.9rem 0;
+    }
+
+    &2 {
+      right: 0;
+      top: 50%;
+      transform: translateY(-20%);
+      border-radius: 2.9rem 0 0 2.9rem;
+    }
+
+    &3 {
+      height: 8.3rem;
+      width: 30.8rem;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2.9rem 2.9rem 0 0;
+    }
+  }
+}

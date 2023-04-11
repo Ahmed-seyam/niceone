@@ -1,0 +1,40 @@
+.billing {
+  &__data__popup--container {
+    background-color: $color-white;
+    border-radius: 1rem;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 4rem;
+    grid-column-gap: 4rem;
+    min-width: 80%;
+    @include respond(phone-2) {
+      grid-template-columns: 1fr;
+      padding: 2rem;
+    }
+  }
+}
+
+
+.dark .billing {
+  &__data__popup--container {
+    background-color: $color-white;
+  }
+
+  
+}
+
+.dark .data__list--text {
+  color: $color-grey-light-5 !important;
+  font-family: 'Tilt Neon', cursive;
+
+}
+
+.dark .data__list--heading {
+  color: $color-grey-dark-1 !important;
+}
+
+.data__list--heading {
+  font-weight: 500;
+  font-family: 'Tilt Neon', cursive;
+}

@@ -1,0 +1,74 @@
+.dark .alert{
+  background-color: $color-dark-primary !important;
+}
+
+.alert {
+  background-color: $color-primary-dark;
+  border-radius: 0.7rem;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+  padding: 1.2rem 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  box-shadow: 0 0 2rem rgba($color-primary-dark, 0.3);
+  z-index: 99999999;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  &__container {
+    position: fixed;
+    right: 2rem;
+    bottom: 7rem;
+    z-index: 99999999;
+
+    @include respond(phone-1) {
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    @include respond(phone-2) {
+      bottom: 10rem;
+    }
+  }
+
+  &__message {
+    font-size: 1.2rem;
+    padding: 0 0 0 1.5rem;
+    margin-right: auto;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+
+    &--success {
+      fill: $color-green;
+    }
+
+    &--warning {
+      fill: $color-yellow;
+    }
+
+    &--error {
+      fill: $color-red;
+    }
+
+    &--info {
+      fill: $color-secondary;
+    }
+
+    &--close {
+      fill: $color-red;
+    }
+  }
+
+  & > .btn {
+    padding: 0;
+    background-color: transparent;
+  }
+}

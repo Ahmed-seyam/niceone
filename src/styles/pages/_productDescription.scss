@@ -1,0 +1,21 @@
+.reviews {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  overflow: hidden;
+  .btn {
+    justify-self: end;
+  }
+}
+
+.previewed__image {
+  width: 100vw;
+  max-height: 100vh;
+  &--img {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,117 @@
+.select__box {
+  position: relative;
+  padding: 1.1rem 1.1rem 1.1rem 2rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  border-radius: 3rem;
+  background-color: $color-grey-light-2;
+  width: 100%;
+  min-width: 20rem;
+  &__value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+    color: $color-primary-dark;
+    pointer-events: none;
+    font-weight: 600;
+    span {
+    }
+  }
+
+  &__arrow {
+    width: 2.3rem;
+    height: 2.3rem;
+    fill: $color-white;
+    transform: rotate(90deg);
+    padding: 0.3rem;
+    background-color: $color-secondary;
+    border-radius: 50%;
+  }
+
+  &__options {
+    position: absolute;
+    top: 130%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    overflow: hidden;
+    border-radius: 0.7rem;
+    box-shadow: 0 0.5rem 2rem rgba($color-grey-light-4, 0.2);
+    z-index: 9999;
+  }
+
+  &__option {
+    padding: 1.4rem 3rem 1.4rem 3rem;
+    transition: all 0s ease-in-out;
+    font-weight: 400;
+    color: $color-white;
+    background-color: $color-secondary;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    // &:not(:last-child) {
+    //   border-bottom: 2px solid $color-grey-light-2;
+    // }
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      color: $color-white;
+      background-color: $color-secondary-dark-1;
+    }
+  }
+
+  &__icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: $color-blue-light;
+    margin-right: 1rem;
+  }
+}
+
+.select__box--2 {
+  background-color: $color-white;
+
+  .select__box__arrow {
+    background-color: $color-secondary-light;
+  }
+
+  .select__box__options {
+    width: 20rem;
+    border-radius: 1.1rem;
+    box-shadow: 0 0.5rem 2rem rgba($color-grey-dark-2, 0.08);
+  }
+
+  .select__box__option {
+    position: relative;
+    padding: 1.8rem 0 1.8rem 2rem;
+    background-color: $color-white;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-100%, -50%) scale(0);
+      background-color: $color-secondary;
+      border-radius: 0 20rem 20rem 0;
+      height: 50%;
+      width: 7px;
+      transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+
+    .select__box:not(:last-child) {
+    }
+
+    &:hover {
+      color: $color-secondary;
+    }
+
+    &:hover:after {
+      transform: translate(0, -50%) scale(1);
+    }
+  }
+}

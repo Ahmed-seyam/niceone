@@ -1,0 +1,117 @@
+.sub_menu {
+  position: fixed;
+  left: 24rem;
+  top: 17vh;
+  z-index: 999999;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.7rem 1.7rem;
+  padding: 1.7rem;
+  border-radius: 1.4rem;
+  background-color: $color-white;
+  overflow: hidden;
+  cursor: context-menu;
+  box-shadow: 0 0 2rem rgba($color-grey-light-4, 0.4);
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.015);
+  &__item {
+    position: relative;
+    border-radius: 0.7rem;
+    color: $color-secondary;
+    background-color: rgba($color-secondary, 0.15);
+    &-red {
+      color: $color-gmail;
+      background-color: rgba($color-gmail, 0.15);
+    }
+
+    &-green {
+      color: $color-green-dark;
+      background-color: rgba($color-green-dark, 0.15);
+    }
+
+    &-orange {
+      color: $color-orange;
+      background-color: rgba($color-orange, 0.15);
+    }
+
+    &-violet {
+      color: $color-violet;
+      background-color: rgba($color-violet, 0.15);
+    }
+
+    &-indigo {
+      color: $color-indigo;
+      background-color: rgba($color-indigo, 0.15);
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+      color: inherit;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+
+  &__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.7rem;
+    fill: currentColor;
+  }
+
+  &_active {
+    & > .nav_dashboard__link {
+      background-color: $color-blue-light !important;
+      color: $color-secondary !important;
+      font-weight: 600 !important;
+      backface-visibility: hidden;
+      svg {
+        fill: currentColor !important;
+      }
+    }
+  }
+}
+
+.dark .sub_menu_active {
+  & > .nav_dashboard__link {
+    background-color: rgba($color-secondary, .1) !important;
+  }
+
+ 
+}
+
+.dark .sub_menu {
+  &__item {
+    background-color: rgba(rgb(0, 0,0), .3);
+    &-red {
+      color:rgb(255, 8, 8);
+      background-color: rgba(rgb(0, 0,0), .3);
+    }
+
+    &-green {
+      // color: rgb(4, 202, 4);
+      // background-color: rgba(rgb(92, 219, 92), 0.2);
+      background-color: rgba(rgb(0, 0,0), .3);
+    }
+
+    &-orange {
+      color: rgb(177, 116, 4);
+      background-color: rgba(rgb(0, 0,0), .3);
+    }
+
+    &-violet {
+      color: rgb(224, 44, 224);
+      background-color: rgba(rgb(0, 0,0), .3);
+    }
+
+    &-indigo {
+      color: rgb(30, 169, 204);
+      background-color: rgba(rgb(0, 0,0), .3);
+    }
+  }
+}

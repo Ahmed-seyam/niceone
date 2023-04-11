@@ -1,0 +1,18 @@
+.custom-dot {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0;
+  background-color: #c5e5ff;
+  transition: all 0.2s;
+  border: 4px solid $color-secondary;
+  border-radius: 50%;
+}
+.custom-dot:hover {
+  transform: translateY(-50%) scale(1.5);
+  cursor: pointer;
+}
+.custom-dot.focus {
+}

@@ -1,0 +1,51 @@
+.menu {
+  position: fixed;
+  right: 4rem;
+  top: 9rem;
+  max-height: calc(100vh - 13rem);
+  width: 43rem;
+  border-radius: 4rem;
+  z-index: 99999999;
+  background-color: $color-grey-light-1;
+  box-shadow: 0 0 2rem rgba($color-grey-dark-4, 0.2);
+  overflow: hidden;
+  padding: 4rem 0 0;
+  @include respond(phone-2) {
+    top: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 4rem 4rem;
+  }
+  .heading {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .controls--div {
+    bottom: 1.5rem;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__title {
+    display: block;
+  }
+
+  &__btn-del {
+  }
+
+  &__content {
+    max-height: calc(100vh - 30rem);
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+  }
+}

@@ -1,0 +1,83 @@
+.blog {
+  display: grid;
+  grid-template-columns: 1fr [sidebar-start] 47rem [sidebar-end];
+  grid-template-rows: min-content max-content;
+  grid-row-gap: 12rem;
+
+  & .carousel__slide {
+    min-width: 60% !important;
+  }
+
+  @include respond(tap-land-2) {
+    margin-top: 6rem;
+  }
+
+  @include respond(labtop-2) {
+    grid-template-columns: 1fr [sidebar-start] 40rem [sidebar-end];
+  }
+
+  @include respond(tap-land-2) {
+    grid-template-columns: 1fr [sidebar-start] 38rem [sidebar-end];
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+
+  &__pinned_post {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    .post {
+      margin-left: 6rem;
+
+      @include respond(tap-land-1) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .post:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+  h2 {
+    margin-bottom: 4rem;
+  }
+  &__posts {
+    grid-column: 1 / 2;
+  }
+
+  &__posts--div {
+    margin-left: 6rem;
+
+    @include respond(tap-land-1) {
+      margin-left: 0;
+    }
+  }
+
+  &__sidebar {
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / -1;
+    overflow: hidden;
+    padding-top: 7rem;
+    background-color: $color-grey-light-2;
+
+    @include respond(tab-port) {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__brief {
+    &--img {
+      width: 10.5rem;
+      object-fit: contain;
+    }
+
+    &--text {
+      align-items: center;
+      font-size: 1.4rem;
+    }
+  }
+}

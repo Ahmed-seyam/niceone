@@ -1,0 +1,247 @@
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 4rem !important;
+  }
+
+  @include respond(phone-1) {
+    margin-bottom: 1rem !important;
+  }
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+  @include respond(tab-port) {
+    margin-top: 3rem !important;
+  }
+
+  @include respond(phone-1) {
+    margin-top: 1rem !important;
+  }
+}
+
+.u-margin-0 {
+  margin: 0 !important;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 10rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-right-medium {
+  margin-right: 4rem !important;
+}
+
+.u-margin-left-medium {
+  margin-right: 4rem !important;
+}
+.u-margin-top-medium {
+  margin-top: 4rem !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important;
+}
+
+.u-margin-right-small {
+  margin-right: 2rem !important;
+}
+
+.u-margin-left-small {
+  margin-right: 2rem !important;
+}
+.u-margin-top-small {
+  margin-top: 2rem !important;
+}
+
+.u-margin-bottom-tiny {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-right-tiny {
+  margin-right: 1.5rem !important;
+}
+
+.u-margin-left-tiny {
+  margin-right: 1.5rem !important;
+}
+.u-margin-top-tiny {
+  margin-top: 1.5rem !important;
+}
+
+.u-m-0 {
+  margin: 0;
+}
+
+.u-padding-left-small {
+  padding-right: 2rem !important;
+}
+.u-padding-left-small {
+  padding-left: 2rem !important;
+}
+
+.rounded__base {
+  background-color: $color-white;
+  box-shadow: 0 1rem 2rem rgba($color-grey-dark-1, 0.3);
+  border-radius: 5rem;
+  display: inline-grid;
+}
+
+.wrapper {
+  min-height: calc(100vh - 23rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.space_between {
+  justify-content: space-between !important;
+}
+.zero__top {
+  top: 0 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  margin: auto;
+}
+
+.success {
+  background-color: rgba($color-green-dark, 0.05);
+  color: $color-white;
+  border-radius: 20rem;
+  width: fit-content !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: $color-green-dark;
+}
+
+.fail {
+  color: $color-red;
+}
+
+.pending {
+  color: $color-grey-dark-2;
+}
+
+.prevent__click {
+  pointer-events: none;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.p_0 {
+  padding: 0 !important;
+}
+
+.error__message {
+  display: block;
+  color: $color-red !important;
+  text-transform: lowercase !important;
+  padding: 0.8rem 1rem 0 !important;
+  width: 37.5rem !important;
+  margin-left: auto !important;
+  font-weight: 400 !important;
+  font-size: 1.4rem !important;
+
+  .fullwidth {
+    width: 100%;
+    grid-column: 1 / -1;
+  }
+}
+
+.full-grid {
+  grid-column: 1 / -1;
+}
+
+.custom__padding {
+  padding: 0 2rem;
+}
+
+.fade_in_right {
+  animation: fadeInRight 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1 alternate
+    forwards;
+}
+
+.fade_in_left {
+  animation: fadeInLeft 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1 alternate
+    forwards;
+}
+
+.fade_in_bottom {
+  animation: fadeInBottom 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1
+    alternate forwards;
+}
+
+.fade_in_top {
+  animation: fadeInTop 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1 alternate
+    forwards;
+}
+.bounace_rotate {
+  animation: bounaceRotate 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1
+    alternate forwards;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.small_text {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.min-width-medium {
+  min-width: 15rem;
+}
+
+.auto_width {
+  width: auto !important;
+}
+
+.normal_cursor {
+  cursor: context-menu !important;
+}

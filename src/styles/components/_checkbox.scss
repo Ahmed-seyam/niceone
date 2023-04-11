@@ -1,0 +1,40 @@
+.selection {
+  grid-column: 1 / 2;
+  align-self: center;
+  grid-row: 1 / -1;
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ &__label:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 2.3px;
+    width: 2.3px;
+    box-shadow: 2px 0 0 $color-white, 4px 0 0 $color-white,
+      4px -2px 0 $color-white, 4px -4px 0 $color-white, 4px -6px 0 $color-white,
+      4px -8px 0 $color-white;
+    transform: rotate(45deg) translate(90%, -100%);
+    background-color: $color-white;
+    content: "";
+    border-radius: 2px;
+  }
+  &__checkbox:checked ~ &__label {
+    background-color: $color-secondary;
+  }
+
+  &__label {
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: rgba($color-secondary, 0.2);
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+      color: #00bff0;
+    }
+  }
+}

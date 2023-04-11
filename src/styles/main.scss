@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+@import "./abstract/_vars.scss";
+
+.router-link-active.router-link-exact-active {
+  color: royalblue;
+  transform: translateX(10px);
+  transition: .3s all cubic-bezier(0.6, 0.04, 0.98, 0.335)
+}
+
+@import "./abstract/_mixins.scss";
+
+@import "./base/_base.scss";
+@import "./base/_typography.scss";
+@import "./base/_utilities.scss";
+@import "./base/_animate.scss";
+
+@import "./layout/_grid.scss";
+@import "./layout/_navbar.scss";
+@import "./layout/_footer.scss";
+@import "./layout/_background.scss";
+@import "./layout/_productDetails.scss";
+@import "./layout/_widget.scss";
+@import "./layout/_alert.scss";
+
+@import "./components/_search.scss";
+@import "./components/_dataList.scss";
+@import "./components/_shortcuts.scss";
+@import "./components/_filter.scss";
+@import "./components/_btns.scss";
+@import "./components/_eventCard.scss";
+@import "./components/_category.scss";
+@import "./components/_carousel.scss";
+@import "./components/_product.scss";
+@import "./components/_postCard.scss";
+@import "./components/_slider.scss";
+@import "./components/_selectBox.scss";
+@import "./components/_form.scss";
+@import "./components/_popups.scss";
+@import "./components/_menu.scss";
+@import "./components/_controller.scss";
+@import "./components/_sizePallatte.scss";
+@import "./components/_colorPallatte.scss";
+@import "./components/_reviewCard.scss";
+@import "./components/_subscribe.scss";
+@import "./components/_socialIcons.scss";
+@import "./components/_topics.scss";
+@import "./components/_ratingApp.scss";
+@import "./components/_notification.scss";
+@import "./components/_todo.scss";
+@import "./components/_checkbox.scss";
+@import "./components/_statistics.scss";
+@import "./components/_table.scss";
+@import "./components/_profile.scss";
+@import "./components/_subMenu.scss";
+@import "./components/_selectSizes.scss";
+@import "./components/_map.scss";
+@import "./components/_spinner.scss";
+@import "./components/_emptyContent.scss";
+@import "./components/_accordion.scss";
+
+@import "./pages/_home.scss";
+@import "./pages/_error.scss";
+@import "./pages/_store.scss";
+@import "./pages/_blog.scss";
+@import "./pages/_productDescription.scss";
+@import "./pages/_about.scss";
+@import "./pages/_event.scss";
+@import "./pages/_postDescription.scss";
+
+@import "./pages/dashboard/_home.scss";
+@import "./pages/dashboard/_checkout.scss";
+@import "./pages/dashboard/_favorites.scss";
+@import "./pages/dashboard/_bag.scss";
+@import "./pages/dashboard/_billings.scss";
+@import "./pages/dashboard/_privacey.scss";
+@import "./pages/dashboard/_adminProduct.scss";
+@import "./pages/dashboard/_adminLocation.scss";
+
+@import './markdown.css';
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #121212;
+  color-scheme: dark;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: rgb(13,148,136);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}

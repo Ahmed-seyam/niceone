@@ -1,0 +1,52 @@
+.widget {
+  border-radius: 2rem;
+  padding: 2.5rem 3rem;
+  background-color: $color-white;
+  font-size: 1.3rem;
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include respond(tap-land-3) {
+    padding: 2rem 1.5rem;
+  }
+  &__header {
+    padding: 0 0 3rem;
+    text-align: center;
+    .btn__group {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+.widget--style-2 {
+  width: 100%;
+  border-radius: 2.1rem;
+  background-color: $color-white;
+  box-shadow: 0 0 2rem rgba($color-grey-light-4, 0.2);
+
+  overflow: hidden;
+  &__heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1.8rem;
+    background-color: $color-grey-light-1;
+
+    .btn-red {
+      padding-left: 1.8rem;
+      padding-right: 1.8rem;
+      &:disabled {
+        opacity: 0.6;
+      }
+      .btn__icon {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+}

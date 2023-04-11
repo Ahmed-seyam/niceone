@@ -1,0 +1,274 @@
+.event_page {
+  &__header {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(min-content, 50rem) minmax(50%, 1fr);
+    grid-template-rows: max-content 1fr min-content;
+    justify-items: start;
+    align-items: center;
+    background-color: $color-white;
+    min-height: 51rem;
+    max-height: calc(100vh - 14rem);
+    overflow: hidden;
+    border-radius: 3.2rem;
+    box-shadow: 0 0 1rem rgba($color-grey-light-4, 0.4);
+    padding: 9.2rem 0 0 5.5rem;
+    @include respond(tap-land-2) {
+      margin-top: 5rem;
+    }
+
+    @include respond(tap-land-3) {
+      grid-template-columns: minmax(min-content, 60rem) minmax(40%, 1fr);
+    }
+
+    @include respond(tab-port) {
+      max-height: max-content;
+      min-height: max-content;
+      height: auto !important;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, max-content);
+      text-align: center;
+      justify-items: center;
+      padding: 5rem 0 0 0;
+    }
+
+    @include respond(phone-3) {
+      border-radius: 0;
+    }
+
+    @include respond(phone-1) {
+      padding: 4rem 0 0 0;
+      text-align: center;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      height: 85rem;
+      width: 85rem;
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-dark, 0.8),
+        $color-secondary
+      );
+      clip-path: circle(50% at 100% 50%);
+      z-index: 19;
+
+      @include respond(tab-port) {
+        height: 15rem;
+        width: 15rem;
+        right: 50%;
+        bottom: 20rem;
+        transform: translate(50%, 50%);
+        clip-path: circle(50% at 50% 50%);
+      }
+    }
+
+    h1,
+    .text,
+    .btn {
+      grid-column: 1 / 2;
+    }
+    .text {
+      grid-row: 2 / 3;
+      font-size: 1.8rem;
+      color: $color-grey-dark-3;
+      @include respond(tab-port) {
+        padding: 3rem 4rem 0;
+        text-align: left;
+      }
+
+      @include respond(phone-1) {
+        padding: 3rem 2rem 0;
+      }
+    }
+    h1 {
+      width: 95%;
+      align-self: center;
+      @include respond(tab-port) {
+        width: 100%;
+      }
+    }
+
+    .btn {
+      grid-row: 3 / 4;
+      margin-bottom: 5.5rem;
+      @include respond(tab-port) {
+        grid-row: 4 / 5;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    display: block;
+    height: 40rem;
+    object-fit: contain;
+    z-index: 20;
+    border-radius: 2rem 2rem 0 0;
+
+    @include respond(tab-port) {
+      height: 20rem;
+    }
+  }
+
+  &__image--div {
+    grid-column: 2 /3;
+    grid-row: 1 / 4;
+    align-self: end;
+    justify-self: center;
+    height: 100%;
+    display: grid;
+    align-items: end;
+    align-content: end;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+      grid-column: 1 /2;
+      grid-row: 3 / 4;
+    }
+  }
+
+  &__description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    background-color: $color-white;
+    overflow: hidden;
+    border-radius: 3.2rem;
+    box-shadow: 0 0 1rem rgba($color-grey-light-4, 0.4);
+    padding: 5.5rem;
+
+    @include respond(tab-port) {
+      padding: 3rem;
+    }
+    @include respond(phone-3) {
+      padding: 3rem 2rem;
+      border-radius: 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 5rem;
+
+      @include respond(tab-port) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    .text {
+      margin-bottom: 7.2rem;
+      font-size: 1.8rem;
+      color: $color-grey-dark-3;
+      @include respond(tab-port) {
+        margin-bottom: 5rem;
+      }
+
+      @include respond(phone-1) {
+        margin-bottom: 3rem;
+      }
+    }
+    h2,
+    .text {
+      grid-column: 1 / 3;
+    }
+  }
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @include respond(phone-3) {
+    align-items: flex-start;
+  }
+
+  &:nth-of-type(2) {
+    justify-self: end;
+  }
+  &__icon {
+    fill: $color-white;
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    z-index: 20;
+    @include respond(tab-port) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    @include respond(phone-3) {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &__icon--div {
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    @include respond(phone-3) {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  &__icon--background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 19;
+    object-fit: contain;
+  }
+
+  &__title {
+    margin: 0 9.5rem 0 2rem;
+    font-size: 2rem;
+    color: $color-primary-light;
+    font-weight: 800;
+    width: max-content;
+    text-transform: uppercase;
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+      margin: 0 1rem;
+    }
+
+    @include respond(phone-3) {
+      margin: 0 1rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__value {
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: $color-primary-light;
+
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(phone-3) {
+      margin: -1.5rem 0.5rem 0 5rem;
+      font-size: 1.4rem;
+      width: fit-content;
+      order: 3;
+    }
+  }
+}

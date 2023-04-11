@@ -1,0 +1,38 @@
+.accordion {
+  &__btn {
+    width: 100%;
+    grid-column: 1 / -1;
+    background-color: $color-grey-light-1 !important;
+    color: $color-primary-light;
+    font-weight: 500;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    justify-content: flex-start;
+    margin: 0 !important;
+    align-items: center;
+    &.active {
+      background-color: $color-secondary !important;
+      color: $color-grey-light-2;
+      border-radius: 1rem 1rem 0 0;
+
+      & > svg {
+        fill: $color-white;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 1rem;
+    fill: $color-secondary;
+  }
+
+  &__text {
+    background-color: $color-blue-light;
+    font-weight: 500;
+    color: $color-primary-light;
+    max-height: 100vh;
+    padding: 3rem 1.5rem;
+    font-size: 1.4rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+}

@@ -1,0 +1,81 @@
+.size_pallatte {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.6rem;
+    border-radius: 5rem;
+    background-color: $color-primary-light;
+    margin: 2rem 0;
+
+    @include respond(phone-2) {
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+  }
+
+  &__item {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $color-grey-light-1;
+    min-width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 20;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 4rem;
+      transition: all 0.3s ease-out;
+      background-color: $color-secondary;
+
+      z-index: -1;
+    }
+    &.active {
+      color: $color-white;
+    }
+
+    &.active:after {
+      width: 130%;
+      height: 130%;
+
+      @include respond(phone-2) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &.isZeroQuantity {
+      color: $color-white;
+    }
+
+    &.isZeroQuantity:after {
+      background-color: $color-red;
+    }
+
+    &:hover {
+      color: $color-white;
+      &:after {
+        width: 130%;
+        height: 130%;
+
+        @include respond(phone-2) {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+.todo {
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.4rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: $color-secondary;
+      width: 1rem;
+      height: 40%;
+      left: 0;
+      top: 50%;
+      transform: translateX(-100%) translateY(-50%) scale(0);
+      border-radius: 0 2rem 2rem 0;
+      transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+  }
+
+  &__finished {
+    &:after {
+      transform: translateX(0) translateY(-50%) scale(1);
+    }
+    & > p {
+      text-decoration: line-through;
+      color: $color-grey-light-4;
+    }
+
+    & > .todo__tick--div {
+      background-color: rgba($color-rose, 0.15);
+
+      & > .todo__tick {
+        fill: $color-red;
+      }
+    }
+  }
+
+  &__checkbox {
+    width: 0;
+    height: 0;
+    display: none;
+    &:checked + .todo__label::after {
+      background-color: $color-secondary !important;
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    &:checked + .todo__label {
+      border: 3px solid $color-secondary-light;
+    }
+  }
+
+  &__group {
+    margin-right: 1.5rem;
+  }
+
+  &__label {
+    position: relative;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid $color-secondary-light;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 1.3rem;
+      height: 1.3rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(2);
+      border-radius: 50%;
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+
+    &:hover:after {
+      background-color: $color-secondary-light;
+    }
+  }
+
+  &__content {
+    font-weight: 600;
+    color: $color-grey-dark-2;
+    margin-right: 1rem;
+  }
+
+  &__tick {
+    fill: $color-white;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  &__tick--div {
+    margin-left: auto;
+    padding: 0.7rem;
+    background-color: $color-green;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__form {
+    background-color: $color-grey-light-1;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.1rem 5rem 1.1rem 1.5rem;
+    font-size: 1.4rem;
+    color: $color-grey-dark-1;
+    border-radius: 20rem;
+    border: none;
+    outline: none;
+    &::-webkit-input-placeholder {
+      color: $color-grey-light-4;
+    }
+  }
+
+  &__submit {
+    margin-left: -4rem;
+  }
+
+  &__no_content {
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 2rem;
+  }
+}
