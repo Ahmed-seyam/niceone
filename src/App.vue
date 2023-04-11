@@ -23,9 +23,9 @@ useHead({
 </script>
 
 <template>
-  <BODy class="dark:bg-dark-quadratic">
+  <body class="dark:bg-dark-quadratic">
     <div id="app">
       <RouterView />
     </div>
-  </BODy>
+  </body>
 </template>
