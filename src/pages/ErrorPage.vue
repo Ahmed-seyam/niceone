@@ -10,12 +10,5 @@
     </p>
 
     <span>404</span>
-
-    <!-- <img src="/images/robot.png" alt="robot" class="error_page__robot">
-    <img
-      src="/images/white_wave.png"
-      alt="white_wave"
-      class="error_page__wave"
-    > -->
   </div>
 </template>
