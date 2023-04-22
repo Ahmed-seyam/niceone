@@ -28,7 +28,7 @@ const direction = computed(() => (locale === "en" ? "ltr" : "rtl"));
           class="h-7rem w-7rem rounded-full p-1rem bg-[var(--bluegray-100)] flex items-center justify-center"
         >
           <img
-            src="/images/categories/Asset 32.svg"
+            src="/images/categories/SVG/Asset32.svg"
             class="w-[100%] h-[100%]"
             alt=""
           />
@@ -49,7 +49,7 @@ const direction = computed(() => (locale === "en" ? "ltr" : "rtl"));
           class="h-7rem w-7rem rounded-full p-1rem bg-[var(--bluegray-100)] flex items-center justify-center"
         >
           <img
-            src="/images/categories/Asset 33.svg"
+            src="/images/categories/SVG/Asset33.svg"
             class="w-[100%] h-[100%]"
             alt=""
           />
@@ -70,7 +70,7 @@ const direction = computed(() => (locale === "en" ? "ltr" : "rtl"));
           class="h-7rem w-7rem rounded-full p-1rem bg-[var(--bluegray-100)] flex items-center justify-center"
         >
           <img
-            src="/images/categories/Asset 34.svg"
+            src="/images/categories/SVG/Asset34.svg"
             class="w-[100%] h-[100%]"
             alt=""
           />

@@ -61,7 +61,7 @@
 
     <footer>
       <img
-        src="/images/ecommerce/SVG/Asset 13.svg"
+        src="/images/ecommerce/SVG/Asset_13.svg"
         alt="sidebar_image"
         class="h-9rem w-min"
       />

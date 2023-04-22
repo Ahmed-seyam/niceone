@@ -16,19 +16,19 @@ const categories = ref([
   {
     id: "1",
     title: "perfume",
-    image: "Asset 31.svg",
+    image: "Asset31.svg",
     categories: [
       {
         id: "4",
         title: "sub category 1",
-        image: "Asset 35.svg",
+        image: "Asset35.svg",
         categories: [],
         root: false,
       },
       {
         id: "5",
         title: "sub category 2",
-        image: "Asset 36.svg",
+        image: "Asset36.svg",
         categories: [],
         root: false,
       },
@@ -39,20 +39,20 @@ const categories = ref([
   {
     id: "2",
     title: "hand clean",
-    image: "Asset 32.svg",
+    image: "Asset32.svg",
 
     categories: [
       {
         id: "6",
         title: "sub cat 1",
-        image: "Asset 32.svg",
+        image: "Asset32.svg",
         categories: [],
         root: false,
       },
       {
         id: "7",
         title: "sub cat 2",
-        image: "Asset 32.svg",
+        image: "Asset32.svg",
         categories: [],
         root: false,
       },
@@ -63,13 +63,13 @@ const categories = ref([
   {
     id: "3",
     title: "face clean",
-    image: "Asset 33.svg",
+    image: "Asset33.svg",
 
     categories: [
       {
         id: "8",
         title: "sub cat 1",
-        image: "Asset 35.svg",
+        image: "Asset35.svg",
         categories: [],
 
         root: false,
@@ -77,17 +77,17 @@ const categories = ref([
       {
         id: "9",
         title: "sub cat 2",
-        image: "Asset 36.svg",
+        image: "Asset36.svg",
         categories: [
           {
             id: "10",
             title: "sub cat 1",
-            image: "Asset 37.svg",
+            image: "Asset37.svg",
             categories: [
               {
                 id: "11",
                 title: "sub cat 1",
-                image: "Asset 38.svg",
+                image: "Asset38.svg",
                 categories: [],
                 root: false,
               },
@@ -104,7 +104,7 @@ const categories = ref([
   {
     id: "11",
     title: "makeup",
-    image: "Asset 34.svg",
+    image: "Asset34.svg",
     categories: [],
     root: true,
   },

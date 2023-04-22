@@ -158,6 +158,7 @@ export default defineConfig({
       /vue-i18n/,
       "@splidejs/vue-splide",
       "@vuelidate/core",
+      "primevue",
     ],
   },
 

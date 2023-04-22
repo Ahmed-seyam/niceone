@@ -1,8 +1,6 @@
 <template>
   <div class="error_page">
-    <div class="error_page__oops">
-      oops!
-    </div>
+    <div class="error_page__oops">oops!</div>
 
     <p class="error_page__text">
       page not found
@@ -13,11 +11,11 @@
 
     <span>404</span>
 
-    <img src="/images/robot.png" alt="robot" class="error_page__robot">
+    <!-- <img src="/images/robot.png" alt="robot" class="error_page__robot">
     <img
       src="/images/white_wave.png"
       alt="white_wave"
       class="error_page__wave"
-    >
+    > -->
   </div>
 </template>

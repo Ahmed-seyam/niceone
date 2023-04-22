@@ -26,7 +26,7 @@ const openFilter = () => {
       </div>
 
       <img
-        src="/images/categories/Asset 35.svg"
+        src="/images/categories/SVG/Asset35.svg"
         class="w-[8rem] h-[8rem] p-1rem bg-[var(--bluegray-100)] rounded-full"
         alt=""
       />

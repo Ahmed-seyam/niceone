@@ -74,7 +74,7 @@ const getServity = (status) => {
         class="ltr:m-r-1rem ltr:last:m-r-0 rtl:m-l-1rem rtl:last:m-l-0"
       >
         <template #image>
-          <img src="/images/banking/SVG/Asset 10.svg" alt="" />
+          <img src="/images/banking/SVG/Asset_10.svg" alt="" />
         </template>
         <template #heading> spent </template>
         <template #value> 1200$ </template>
@@ -85,7 +85,7 @@ const getServity = (status) => {
         class="ltr:m-r-1rem ltr:last:m-r-0 rtl:m-l-1rem rtl:last:m-l-0"
       >
         <template #image>
-          <img src="/images/ecommerce/SVG/Asset 14.svg" alt="" />
+          <img src="/images/ecommerce/SVG/Asset_14.svg" alt="" />
         </template>
         <template #heading> completed orders </template>
         <template #value> 6 </template>
@@ -96,7 +96,7 @@ const getServity = (status) => {
         class="ltr:m-r-1rem ltr:last:m-r-0 rtl:m-l-1rem rtl:last:m-l-0"
       >
         <template #image>
-          <img src="/images/ecommerce/SVG/Asset 6.svg" alt="" />
+          <img src="/images/ecommerce/SVG/Asset_6.svg" alt="" />
         </template>
         <template #heading> pending orders </template>
         <template #value> 2 </template>

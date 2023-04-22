@@ -1,3 +1,4 @@
+import { isClient } from "@vueuse/core";
 import type { Locale } from "vue-i18n";
 import { createI18n } from "vue-i18n";
 import { type UserModule } from "~/types";
@@ -23,10 +24,9 @@ export const availableLocales = Object.keys(localesMap);
 const loadedLanguages: string[] = [];
 
 function setI18nLanguage(lang: Locale) {
-  localStorage.setItem("lang", lang);
+  if (isClient) localStorage.setItem("lang", lang);
   i18n.global.locale.value = lang as any;
-  if (typeof document !== "undefined")
-    document.querySelector("html")?.setAttribute("lang", lang);
+  if (isClient) document.querySelector("html")?.setAttribute("lang", lang);
   return lang;
 }
 
@@ -48,7 +48,7 @@ export const install: UserModule = ({ app }) => {
   app.use(i18n);
 
   let lang: any = "en";
-  if (window && typeof window !== undefined) {
+  if (isClient) {
     lang = localStorage.getItem("lang") ? localStorage.getItem("lang") : "en";
 
     if (lang === "ar") {
