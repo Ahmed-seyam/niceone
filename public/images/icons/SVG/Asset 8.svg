@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.26 105.26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #515254;
+      }
+
+      .cls-3 {
+        fill: #ffc9ce;
+      }
+
+      .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-5 {
+        fill: #ff9ca4;
+      }
+
+      .cls-6 {
+        fill: #67686b;
+      }
+
+      .cls-7 {
+        mix-blend-mode: multiply;
+        opacity: .15;
+      }
+
+      .cls-8 {
+        fill: #fbedd1;
+      }
+    </style>
+  </defs>
+  <g class="cls-4">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="OBJECTS">
+        <g>
+          <circle class="cls-8" cx="52.63" cy="52.63" r="52.63"/>
+          <path class="cls-7" d="m86.38,48.16h-2.08v-14.49c0-2.17-1.76-3.92-3.92-3.92h-45.86c-2.17,0-3.92,1.76-3.92,3.92v14.49h-2.08c-.74,0-1.34.6-1.34,1.34v29c0,2.3,1.86,4.16,4.16,4.16h52.2c2.3,0,4.16-1.86,4.16-4.16v-29c0-.74-.6-1.34-1.34-1.34Z"/>
+          <g>
+            <path class="cls-5" d="m23.7,43.63h57.86c.74,0,1.34.6,1.34,1.34v29c0,2.3-1.87,4.16-4.16,4.16H26.53c-2.3,0-4.16-1.87-4.16-4.16v-29c0-.74.6-1.34,1.34-1.34Z"/>
+            <rect class="cls-3" x="22.36" y="53.52" width="60.53" height="14.73"/>
+            <path class="cls-6" d="m25.78,25.22h53.7v14.49c0,2.17-1.76,3.92-3.92,3.92H29.7c-2.17,0-3.92-1.76-3.92-3.92v-14.49h0Z" transform="translate(105.26 68.85) rotate(180)"/>
+            <path class="cls-2" d="m52.63,39.08c-10.23,0-19.59-2.26-26.85-6.02v10.57h53.7v-10.57c-7.26,3.75-16.62,6.02-26.85,6.02Z"/>
+            <circle class="cls-1" cx="52.63" cy="60.88" r="14.08" transform="translate(-27.22 50.85) rotate(-42)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

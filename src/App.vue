@@ -1,11 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: "vnoun documentation",
+  title: "NiceOne",
   meta: [
     {
       name: "description",
-      content:
-        "vnoun is a template for clothes shops, you can get it from codecanyon",
+      content: "NiceOne",
     },
     {
       name: "theme-color",
@@ -16,16 +15,33 @@ useHead({
     {
       rel: "icon",
       type: "image/svg+xml",
-      href: "",
+      href: "/images/logo.png",
     },
   ],
 });
-</script>
 
+onMounted(() => {
+  (() => {
+    let firstLoad = localStorage.getItem("first-load");
+    if (!firstLoad) {
+      localStorage.setItem("first-load", "yes");
+      firstLoad = localStorage.getItem("first-load");
+    }
+
+    const mode = localStorage.getItem("vueuse-color-scheme");
+
+    if (firstLoad == "yes" && mode !== "light") {
+      toggleDark();
+      localStorage.setItem("first-load", "no");
+    }
+  })();
+});
+</script>
 <template>
-  <body class="dark:bg-dark-quadratic">
-    <div id="app">
-      <RouterView />
-    </div>
-  </body>
+  <div
+    id="app dark:bg-dark-quadratic bg-grey-light-1 !ltr:font-[Karla,sans-serif]"
+  >
+    <RouterView />
+    <Toast />
+  </div>
 </template>

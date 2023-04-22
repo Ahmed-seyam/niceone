@@ -2,12 +2,13 @@
 defineOptions({
   name: "IndexPage",
 });
+
+const router = useRouter();
+router.push("/home");
 </script>
 
 <template>
-  <div>
-
-  </div>
+  <div></div>
 </template>
 
 <route lang="yaml">

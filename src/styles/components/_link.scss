@@ -1,0 +1,40 @@
+
+.router-link-active.router-link-exact-active {
+  
+}
+
+.link_underline {
+    position: relative;
+    overflow: hidden;
+
+    &::after, &::before {
+      content:'';
+      position: absolute;
+      bottom: 0;
+      height: 8px;
+      width: 50%;
+      transition: all .3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+  
+    &::after {
+      border-radius: 2rem 0 0 2rem;
+      left: 0;
+      background-color: var(--indigo-500);
+      transform: translateX(-110%);
+    }
+  
+    &::before {
+      border-radius:0 2rem 2rem 0;
+      right: 0;
+      background-color: var(--indigo-100);
+      transform: translateX(110%);
+    }
+  
+    &:hover:after, &:hover:before {
+      transform: translateX(0);
+    }
+  
+    &:hover{
+      color: var(--indigo-500) !important;
+    }
+  }

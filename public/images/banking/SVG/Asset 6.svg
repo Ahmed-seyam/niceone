@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.76 122.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffd573;
+      }
+
+      .cls-2 {
+        fill: #90c67b;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #76aa60;
+      }
+
+      .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-5 {
+        fill: #f2a900;
+      }
+    </style>
+  </defs>
+  <g id="Objects">
+    <g>
+      <g>
+        <rect class="cls-3" y="40.21" width="174.76" height="82.02"/>
+        <rect class="cls-2" x="10.16" y="50.12" width="154.44" height="62.2"/>
+        <path class="cls-4" d="m29.51,50.12c0,10.69-8.66,19.35-19.35,19.35v-19.35h19.35Z"/>
+        <path class="cls-4" d="m145.25,50.12c0,10.69,8.66,19.35,19.35,19.35v-19.35h-19.35Z"/>
+        <path class="cls-4" d="m29.51,113.92c0-10.69-8.66-19.35-19.35-19.35v19.35h19.35Z"/>
+        <path class="cls-4" d="m145.25,113.92c0-10.69,8.66-19.35,19.35-19.35v19.35h-19.35Z"/>
+        <circle class="cls-3" cx="87.38" cy="81.22" r="22.78" transform="translate(5.98 168.44) rotate(-89.88)"/>
+      </g>
+      <rect class="cls-3" width="174.76" height="39.22"/>
+      <g>
+        <rect class="cls-2" y="37.34" width="174.76" height="3.75"/>
+        <rect class="cls-2" y="27.25" width="174.76" height="3.75"/>
+        <rect class="cls-2" y="17.16" width="174.76" height="3.75"/>
+        <rect class="cls-2" y="7.07" width="174.76" height="3.75"/>
+      </g>
+      <rect class="cls-1" x="79.29" y="21.83" width="16.18" height="100.41"/>
+      <rect class="cls-5" x="79.29" width="16.18" height="40.21"/>
+    </g>
+  </g>
+</svg>

@@ -13,12 +13,12 @@
   }
 
   &--item {
-    padding: 0.9rem 2.2rem;
-    background-color: $color-grey-light-1;
-    color: $color-grey-dark-2;
+    padding: 0.4rem 2rem;
+    background-color: var(--bluegray-50);
+    color: var(--bluegray-900);
     border-radius: 20rem;
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: .9rem;
+    font-weight: 400;
     cursor: pointer;
     background-size: 250%;
     transition: all 0.1s ease-in-out;
@@ -27,41 +27,43 @@
     @include respond(tap-land-3) {
       padding: 0.9rem 2rem;
     }
-    &:not(:last-child) {
-      margin-right: 1rem;
-    }
+  
 
     &-m {
       padding: 0.6rem 2rem;
-      margin: 0 0.5rem 1rem 0;
     }
     &-s {
       padding: 0.3rem 1.5rem;
-      margin: 0 0.5rem 1rem 0;
     }
   }
 
   &--item.active {
+    color: var(--bluegray-50);
+    font-weight: 400;
+
     color: $color-grey-light-1;
     background-position: 100%;
+    
     background-image: linear-gradient(
       60deg,
       transparent 0%,
       transparent 50%,
-      $color-primary-light 50%
+      var(--bluegray-600) 50%
     );
   }
 }
 
 .taps {
   .shortcut--item.active {
-    color: $color-grey-light-1;
+    color: var(--bluegray-50);
     background-position: 100%;
+    
+
     background-image: linear-gradient(
       60deg,
       transparent 0%,
       transparent 50%,
-      $color-primary-light 50%
+      var(--bluegray-600) 50%
     );
   }
 }

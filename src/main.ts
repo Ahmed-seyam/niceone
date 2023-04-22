@@ -9,6 +9,16 @@ import "@unocss/reset/tailwind.css";
 import "./styles/main.scss";
 import "uno.css";
 
+//theme
+import "primevue/resources/themes/lara-light-blue/theme.css";
+
+//core
+import "primevue/resources/primevue.min.css";
+//icons
+import "primeicons/primeicons.css";
+
+import "@splidejs/vue-splide/css";
+
 const routes = setupLayouts(generatedRoutes);
 
 export const createApp = ViteSSG(

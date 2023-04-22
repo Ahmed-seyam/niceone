@@ -15,6 +15,7 @@
     "up": "taze major -I"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12",
     "@unocss/reset": "^0.48.4",
     "@vuelidate/core": "^2.0.0",
     "@vuelidate/validators": "^2.0.0",
@@ -23,6 +24,8 @@
     "axios": "^1.2.6",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.29",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.26.1",
     "sass": "^1.57.1",
     "vue": "^3.2.45",
     "vue-color-input": "^1.0.6",
@@ -33,6 +36,7 @@
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.13",
+    "@iconify-json/logos": "^1.1.24",
     "@intlify/unplugin-vue-i18n": "^0.8.1",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
